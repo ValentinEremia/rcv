@@ -58,7 +58,7 @@ body.dark-theme{
 .change-theme{
   position: absolute;
   right: 0;
-  top: 2.2rem;
+  top: 3.2rem;
   display: flex;
   color: var(--text-color);
   font-size: 1.2rem;
@@ -544,6 +544,7 @@ margin-bottom: -5px;
 
   .generate-pdf{
     display: inline-block;
+    top: 3.2rem;
   }
 
   .section-title, .profile_description{
