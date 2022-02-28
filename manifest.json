@@ -1,0 +1,25 @@
+{
+    "name": "Valentin Eremia - Resume_CV",
+    "short_name": "CV.Web",
+    "start_url": ".",
+    "background_color": "#18191f",
+    "theme_color": "#18191f",
+    "display": "fullscreen",
+    "icons": [
+        {
+            "src": "images/design by Vali_192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },   
+        {
+            "src": "images/design by Vali.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        }
+        
+       
+    ]
+
+}
