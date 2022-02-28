@@ -347,11 +347,12 @@ margin-bottom: -2px;
 }
 
 .home__information{
+  
   display: flex;
   align-items: center;
   font-size: var(--small-font-size);
 }
-
+ a { text-decoration: none; color:var(--text-color) ;}
 .home__icon{
   font-size: 1.2rem;
   margin-right: .25rem;
@@ -534,7 +535,7 @@ margin-bottom: -2px;
 
 .show-scroll{
   visibility: visible;
-  bottom: 9rem;
+  bottom: 10.5rem;
 }
 
 /*========== MEDIA QUERIES ==========*/
@@ -576,6 +577,16 @@ margin-bottom: -2px;
 }
 
 /* Classes modified for large screen size */
+
+@media screen and(min-width: 541px){
+   .experience__line {
+    display: block;
+    width: 2px;
+    height: 105%;
+    background-color: var(--text-color-light);
+    transform: translate(7px, 0);
+}
+}
 
 @media screen and (min-width:968px){
   body{
