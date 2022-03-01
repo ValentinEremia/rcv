@@ -1,6 +1,7 @@
 /*===== GOOGLE FONTS =====*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -9,9 +10,9 @@
   --title-color: #0B0A0A;
   --text-color: #3f3d3d;
   --text-color-light: #707070;
-  --container-color: #FAFAFA;
-  --container-color-alt: #F0EFEF;
-  --body-color: #FCFCFC;
+  --container-color: #f0f0f0;
+  --container-color-alt: #ececec;
+  --body-color: #f5f5f5;
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
@@ -69,13 +70,22 @@ body.dark-theme{
 }
 /*========== Font size variables to scale cv ==========*/
 
-body.scale-cv{
+/* body.scale-cv{
   --h1-font-size: .938rem;
   --h2-font-size: .938rem;
   --h3-font-size: .875rem;
   --normal-font-size: .813rem;
   --small-font-size: .75rem;
   --smaller-font-size: .688rem;
+} */
+
+body.scale-cv{
+  --h1-font-size: 1.15rem;
+  --h2-font-size: .950rem;
+  --h3-font-size: .895rem;
+  --normal-font-size: .823rem;
+  --small-font-size: .775rem;
+  --smaller-font-size: .710rem;
 }
 
 /*========== Generate PDF button ==========*/
@@ -101,11 +111,11 @@ body.scale-cv{
 .scale-cv .bd-container{
   
   max-width: 595px;
-  
+  max-height: 1300px;
 }
 
 .scale-cv .section{
-  padding: 1.5rem 0 .80rem;
+  padding: 1.85rem 0 .80rem;
 }
 
 .scale-cv .section-title{
@@ -115,11 +125,13 @@ body.scale-cv{
 .scale-cv .resume__left, .scale-cv .resume__right{
    padding: 0 1rem;
 }  
-
+.scale-cv .resume__right{
+  margin: 1.002rem 0;
+}
 
 
 .scale-cv .home__container{
-  gap: 1.5rem;
+  gap: .15rem;
 }
 .scale-cv .home__img {
   width: 90px;
@@ -129,19 +141,19 @@ body.scale-cv{
 .scale-cv .home__data{
   gap: .25rem; 
 }
-.scale-cv  .bd-grid{gap: .2rem }
+
 .scale-cv .home__adress, .scale-cv .social__container{
   gap: .75rem;
 }
 .scale-cv .home__icon, .scale-cv .social__icon, .scale-cv .interests__icon{
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .scale-cv .education__container, .scale-cv .experience__container, .scale-cv .certificate__container{
   gap: 1rem;  
 }
-.scale-cv .section{ 
+/* .scale-cv .section{ 
   padding: .9rem 0 .30rem;
-}
+} */
 .scale-cv .education__time, .scale-cv .experience__time{
   padding-right: .5rem;
 }
@@ -230,9 +242,17 @@ img{
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+
+
+
   box-shadow: 0 -1px 4px rgba(0, 0, 0, .1);
   transition: .3s;
 }
+
+
+
+
+
 
 /*========== NAV ==========*/
 .nav{
@@ -253,7 +273,13 @@ img{
     border-radius: 1rem 1rem 0 0;
     z-index: var(--z-fixed);
     transition: .3s;
+ 
   }
+
+
+  
+
+
 }
 .nav_logo{
   
@@ -353,7 +379,10 @@ margin-bottom: -2px;
   font-size: var(--small-font-size);
 }
  a { text-decoration: none; color:var(--text-color) ;}
-.home__icon{
+ a:hover{
+  color: var(--title-color);
+}
+ .home__icon{
   font-size: 1.2rem;
   margin-right: .25rem;
 }
@@ -490,7 +519,23 @@ margin-bottom: -2px;
   border-radius: 50%;
   margin-right: .75rem;
 }
-/*========== CERTIFICATES ==========*/
+/*========== driving_licence section ==========*/
+.driving_licence__container{
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: var(--mb-2);
+  gap: 0rem;
+}
+.driving_licence__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.driving_licence__icon{
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+  margin-bottom: .25rem;
+}
 
 
 /*========== REFERENCES ==========*/
@@ -592,6 +637,9 @@ margin-bottom: -2px;
   body{
     margin: 3rem 0;
   }
+
+
+
   .bd-container{
     margin-left: auto;
     margin-right: auto;
@@ -606,10 +654,14 @@ margin-bottom: -2px;
     box-shadow: 0 0 8px rgba(13, 12, 12, .15);
   }
   .resume__left{
-    background-color: var(--container-color-alt);
+    
+    backdrop-filter: blur(80px);
+    background-color: rgba(138, 138, 138, 0.137);
   }
+
   .resume__left, .resume__right{
     padding: 0 2.2rem;
+    
   }
 
   .generate-pdf{
