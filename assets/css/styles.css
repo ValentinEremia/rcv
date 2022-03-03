@@ -20,7 +20,7 @@
  --container-color-alt: #c4c8cc;
  --body-color: #dee2e6;
  --resume-left-color:#d3d9df;
-   
+ 
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
@@ -55,12 +55,14 @@ html{
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
-  --title-color: #e3e5e7;
-  --text-color: #cfd2d4;
+  --title-color: #e7e9ec;
+  --text-color: #c8cccf;
   --resume-left-color:#1c2024;
   --container-color: #343a40;
   --container-color-alt: #495057;
   --body-color: #212529;
+  --text-color-light: #d7dbdf;
+  
 }
 
 /*========== Button Dark/Light ==========*/
@@ -332,8 +334,9 @@ margin-bottom: 4px;
 
 .nav_icon{
   
-  font-size: 1.5rem; 
+  font-size: 1.56rem; 
   margin-bottom: var(--mb-1);
+ 
 }
 
 /* Show menu */
