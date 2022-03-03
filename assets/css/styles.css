@@ -2,19 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 
+
+
+
+
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
 
- /*========== Colors ==========*/
- --title-color: #0B0A0A;
- --text-color: #3f3d3d;
- --text-color-light: #707070;
- --container-color: #f0f0f0;
- --container-color-alt: #e4e3e3;
- --body-color: #f5f5f5;
+ /* ========== Colors ========== */
+
  
- 
+--title-color: #0b090a;
+ --text-color: #343a40;
+ --text-color-light: #495057;
+ --container-color: #e5e8eb;
+ --container-color-alt: #c4c8cc;
+ --body-color: #dee2e6;
+ --resume-left-color:#d3d9df;
    
 
   /*========== Font and typography ==========*/
@@ -50,12 +55,12 @@ html{
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
-  --title-color: #f2f2f2;
-  --text-color: #bfbfbf;
-  
-  --container-color: #212121;
-  --container-color-alt: #181616;
-  --body-color: #2b2b2b;
+  --title-color: #e3e5e7;
+  --text-color: #cfd2d4;
+  --resume-left-color:#1c2024;
+  --container-color: #343a40;
+  --container-color-alt: #495057;
+  --body-color: #212529;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -129,7 +134,7 @@ body.scale-cv{
    padding: 0 1rem;
 }  
 .scale-cv .resume__right{
-  margin: 1.002rem 0;
+  margin: .88rem 0;
 }
 
 
@@ -184,6 +189,9 @@ body.scale-cv{
 .scale-cv .interests__container{
   column-gap: 2.5rem;
 }
+
+/* -----------------========!!!!!!!!!========---------------- */
+
 
 body{
   margin: 0 0 var(--header-height) 0;
@@ -244,7 +252,7 @@ img{
   bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--body-color);
+  background-color: var(--resume-left-color);
 
 
 
@@ -271,7 +279,7 @@ img{
     left: 0;
     width: 100%;
     padding: 2rem 1.5rem;
-    background-color: var(--body-color);
+    background-color: var(--resume-left-color);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.13);
     border-radius: 1rem 1rem 0 0;
     z-index: var(--z-fixed);
@@ -286,10 +294,10 @@ img{
 }
 .nav_logo{
   
-width: 2.3rem;
-padding: 0;
-margin-left: -5px;
-margin-bottom: -2px;
+width: 2.2rem;
+ padding: 0;
+margin-left: -2px;
+margin-bottom: 4px; 
 }
 
 .nav_toggle{
@@ -323,7 +331,8 @@ margin-bottom: -2px;
 }
 
 .nav_icon{
-  font-size: 1.5rem;
+  
+  font-size: 1.5rem; 
   margin-bottom: var(--mb-1);
 }
 
@@ -393,6 +402,7 @@ margin-bottom: -2px;
 
 .home__button-movil{
   display: inline-block;
+  
   border: 2px solid var(--text-color);
   color: var(--title-color);
   padding: .8rem 1.9rem;
@@ -571,7 +581,7 @@ margin-bottom: -2px;
   justify-content: center;
   align-items: center;
   padding: .3rem;
-  background-color:var(--container-color-alt);
+  background-color:var(--resume-left-color);
   border-radius: .4rem;
   box-shadow: 0px 0px 7px #00000048;
   z-index: var(--z-tooltip);
@@ -662,7 +672,7 @@ margin-bottom: -2px;
   .resume__left{
     
     backdrop-filter: blur(80px);
-    background-color: rgba(138, 138, 138, 0.137);
+    background-color: var(--resume-left-color);
   }
 
   .resume__left, .resume__right{
