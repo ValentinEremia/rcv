@@ -20,6 +20,7 @@
  --container-color-alt: #c4c8cc;
  --body-color: #dee2e6;
  --resume-left-color:#d3d9df;
+ --navbar-color: #d3d8db;
  
 
   /*========== Font and typography ==========*/
@@ -62,6 +63,7 @@ body.dark-theme{
   --container-color-alt: #495057;
   --body-color: #212529;
   --text-color-light: #d7dbdf;
+  --navbar-color: #212429;
   
 }
 
@@ -254,11 +256,11 @@ img{
   bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--resume-left-color);
+  background-color: var(--navbar-color);
 
 
 
-  box-shadow: 0 -2px 7px rgba(0, 0, 0, .1);
+  box-shadow: 0 -3px 7px rgba(0, 0, 0, 0.116);
   transition: .3s;
 }
 
@@ -281,8 +283,8 @@ img{
     left: 0;
     width: 100%;
     padding: 2rem 1.5rem;
-    background-color: var(--resume-left-color);
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.13);
+    background-color: var(--navbar-color);
+    box-shadow: 0 -2px 7px rgba(0, 0, 0, 0.116);
     border-radius: 1rem 1rem 0 0;
     z-index: var(--z-fixed);
     transition: .3s;
@@ -296,10 +298,10 @@ img{
 }
 .nav_logo{
   
-width: 2.2rem;
- padding: 0;
-margin-left: -2px;
-margin-bottom: 4px; 
+width: 3.4rem;
+
+margin-left: -9px;
+/* margin-bottom: 1.2px;  */
 }
 
 .nav_toggle{
@@ -334,8 +336,8 @@ margin-bottom: 4px;
 
 .nav_icon{
   
-  font-size: 1.56rem; 
-  margin-bottom: var(--mb-1);
+  font-size: 2rem; 
+  /* margin-bottom: var(--mb-1); */
  
 }
 
